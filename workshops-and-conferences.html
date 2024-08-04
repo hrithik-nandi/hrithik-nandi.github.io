@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrithik Nandi - Workshops and Conferences</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="menu-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i><span> Home</span></a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i><span> Education</span></a></li>
+                <li><a href="projects.html"><i class="fas fa-book"></i><span> Publications</span></a></li>
+                <li><a href="workshops-and-conferences.html"><i class="fas fa-chalkboard-teacher"></i><span> Workshops and Conferences</span></a></li>
+                <li><a href="achievements.html"><i class="fas fa-trophy"></i><span> Achievements</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero hero-workshops">
+            <div class="hero-content">
+                <h1>Attended Workshops and Conferences</h1>
+            </div>
+        </section>
+
+        <section class="workshops">
+    <div class="section-content">
+        
+        <div class="event">
+	<ul style="list-style-type:square;">
+            <li><h3>Indocrypt 2023, the 24th International Conference on Cryptology in India</h3>
+            <p><strong>Date:</strong> December 10-13, 2023</p>
+            <p><strong>Location:</strong> Birla Institute of Technology & Science (BITS) Pilani Goa Campus</p>
+            <p>Indocrypt 2023 is part of the Indocrypt series organized under the aegis of the Cryptology Research Society of India.</p></li>
+	</ul>
+        </div>
+
+        <div class="event">
+	<ul style="list-style-type:square;">
+            <li><h3>Indocrypt 2022, the 23rd International Conference on Cryptology in India</h3>
+            <p><strong>Date:</strong> December 11-14, 2022</p>
+            <p><strong>Location:</strong> TCG Centres of Research and Education in Science and Technology, Kolkata</p>
+            <p>Indocrypt 2022 is part of the Indocrypt series organized under the aegis of the Cryptology Research Society of India.</p></li>
+	</ul>
+        </div>
+
+        <div class="event">
+	<ul style="list-style-type:square;">
+            <li><h3>Workshop on Number Theory and Combinatorics</h3>
+            <p><strong>Date:</strong> March 14-15, 2022</p>
+            <p><strong>Location:</strong> Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI), Belur</p></li>
+	</ul>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <div class="social-links">
+	    <a href="mailto:hrithiknandi.crypto@gmail.com" target="_blank" rel="noopener noreferrer" class="gmail"><span class="iconify" data-icon="logos:google-gmail"></span></a>
+	    <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+	    <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('header').classList.toggle('expanded');
+            var menuButton = document.getElementById('menu-button');
+            menuButton.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

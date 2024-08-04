@@ -1,0 +1,562 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Google Sans';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #D6DBDF;
+    color: #333;
+}
+
+/* Main content to fill available space */
+main {
+    flex: 1;
+}
+
+/* Header styling */
+header {
+    color: #fff;
+    width: 60px; /* Initial width for the collapsed state */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fix it to the side */
+    transition: width 0.3s; /* Smooth transition for expanding */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a2e; /* Dark blue background */
+}
+
+header.expanded {
+    width: 220px; /* Width when expanded */
+}
+
+/* Footer styling */
+footer {
+    background-color: #D6DBDF;
+    color: white;
+    text-align: right;
+    padding: 5px 5;
+}
+
+.social-links a {
+    color: inherit;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links .linkedin i {
+    color: #0072b5; /* LinkedIn icon color */
+    width: 20px;
+    height: 20px;
+}
+
+.social-links .orcid i {
+    color: #A6CE39; /* ORCID icon color */
+    width: 20px;
+    height: 20px;
+}
+
+.social-links .gmail .iconify {
+    color: #ea4335; /* Gmail icon color */
+    width: 22px;
+    height: 20px;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: background 0.3s, padding 0.3s, visibility 0s; /* Add visibility to the transition */
+}
+
+nav ul li a:hover {
+    background: #576574;
+    padding-left: 1.5rem;
+}
+
+nav ul li a i.fas {
+    margin-right: 1rem;
+    display: inline-block;
+    font-size: 24px; /* Adjust icon size */
+    text-align: center;
+    visibility: visible; /* Ensure icons are visible by default */
+}
+
+nav ul li a span {
+    display: none; /* Hide text by default */
+}
+
+header.expanded nav ul li a span {
+    display: inline; /* Show text when expanded */
+}
+
+#menu-button {
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust the top margin as needed */
+    margin-bottom: auto;
+    transition: transform 0.3s;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+#menu-button.open {
+    transform: rotate(90deg);
+}
+
+#menu-button.open i::before {
+    content: '\f00d'; /* Unicode for cross sign */
+}
+
+/* Ensure the project item class has proper margins and padding */
+.project-item {
+    margin-bottom: 1.5rem;
+}
+
+/* Ensure the project title class has no extra padding or margins */
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #3498db; /* Default color */
+    transition: color 0.3s;
+    text-align: left;
+    margin: 0; /* Ensure no extra margins */
+    padding: 0; /* Ensure no extra padding */
+}
+
+.project-title:hover {
+    color: #2980b9; /* Hover color */
+}
+
+/* Ensure the project details have proper padding */
+.project-details {
+    display: none;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left; /* Add this line to ensure left alignment */
+}
+
+/* Different colors for different project titles */
+.project-title:nth-child(1) {
+    color: #e74c3c;
+}
+
+.project-title:nth-child(1):hover {
+    color: #c0392b;
+}
+
+.project-title:nth-child(2) {
+    color: #27ae60;
+}
+
+.project-title:nth-child(2):hover {
+    color: #1f8e50;
+}
+
+.project-title:nth-child(3) {
+    color: #8e44ad;
+}
+
+.project-title:nth-child(3):hover {
+    color: #71368a;
+}
+
+main {
+    flex: 1; /* Allow main content to grow and fill remaining space */
+    margin-left: 60px; /* Initial margin to accommodate the sidebar */
+    transition: margin-left 0.3s;
+}
+
+header.expanded ~ main {
+    margin-left: 220px; /* Adjust for the expanded nav width */
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 50vh; /* Reduced height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: margin-left 0.3s;
+    position: relative;
+}
+
+header.expanded ~ .hero {
+    margin-left: 220px; /* Adjust for the expanded nav width */
+}
+
+.hero-content {
+    color: #fff;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-family: 'Pacifico', cursive; /* Apply the curvy font */
+    font-size: 18pt
+}
+
+.hero-content.custom-position {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-10%, -20%);
+}
+
+.introduction {
+    padding: 2rem 1rem; /* Adjusted padding to balance the layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: nowrap; /* Ensure content doesn't wrap */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin-right: 2rem; /* Adjusted margin for better spacing */
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
+    object-fit: contain; /* Ensure the image covers the container without distortion */
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.intro-text {
+    max-width: 600px; /* Adjust max-width to ensure text doesn't overflow */
+}
+
+.intro-text h2 {
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    line-height: 1.5;
+}
+
+.intro-text a {
+    color: blue; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.intro-text a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    header {
+        width: 100%; /* Make header full width on small screens */
+        height: auto;
+        position: static;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li {
+        margin: 0;
+    }
+    main {
+        margin-left: 0;
+    }
+    .hero {
+        margin-left: 0;
+    }
+    .intro-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items */
+    }
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 150px; /* Adjusted width for smaller screens */
+        height: 150px; /* Adjusted height for smaller screens */
+    }
+    .intro-text {
+        text-align: center;
+    }
+}
+
+.education {
+    padding: 2rem;
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects {
+    padding: 2rem;
+}
+
+.projects h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.workshops {
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border around each event */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left;
+}
+
+.event h3 {
+    margin: 0;
+    color: #333; /* Dark color for headings */
+}
+
+.event p {
+    margin: 5px 0;
+    color: #555; /* Slightly lighter color for text */
+}
+
+.evente {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border around each event */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #dcdcdc;
+    text-align: left;
+}
+
+.evente h3 {
+    margin: 0;
+    color: #333; /* Dark color for headings */
+}
+
+.evente p {
+    margin: 5px 0;
+    color: #555; /* Slightly lighter color for text */
+}
+
+.eventa {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 3px;
+    border: 1px solid #ddd; /* Light border around each event */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left;
+}
+
+.eventa h3 {
+    margin: 0;
+    color: #333; /* Dark color for headings */
+}
+
+/* styles.css */
+
+.hero-education .hero-content {
+    position: absolute;
+    top: 30%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-education {
+    position: relative;
+    background: url('path/to/your/background-image.jpg') no-repeat center center/cover; /* Add your background image */
+    height: 50vh; /* Adjust as needed */
+}
+
+.hero-projects .hero-content {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 45%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-projects {
+    position: relative;
+    background: url('path/to/your/background-image.jpg') no-repeat center center/cover; /* Add your background image */
+    height: 50vh; /* Adjust as needed */
+}
+
+.hero-achievements .hero-content {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-achievements {
+    position: relative;
+    background: url('path/to/your/background-image.jpg') no-repeat center center/cover; /* Add your background image */
+    height: 50vh; /* Adjust as needed */
+}
+
+.hero-workshops .hero-content {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FDFEFE;
+}
+
+.hero-workshops {
+    position: relative;
+    background: url('path/to/your/background-image.jpg') no-repeat center center/cover; /* Add your background image */
+    height: 50vh; /* Adjust as needed */
+}
+
+.hero-contact .hero-content {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 45%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-contact {
+    position: relative;
+    background: url('path/to/your/background-image.jpg') no-repeat center center/cover; /* Add your background image */
+    height: 52vh; /* Adjust as needed */
+}
+
+.education .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projects .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#image {
+    list-style-image: url(h3.png);
+}
+
+/* styles.css */
+
+/* General styling for links */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Shaded box for the entire content */
+.content {
+    background-color: #DBEFF1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Add this line to ensure left alignment */
+}
+
+.degree {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.degree h3 {
+    margin-bottom: 0.5rem;
+}
+
+.degree p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+}
+
+.hero-education {
+    background: url('education-hero-background.jpg') no-repeat center center/cover;
+}
+
+.hero-projects {
+    background: url('projects-hero-background.jpg') no-repeat center center/cover;
+}
+
+.hero-contact {
+    background: url('contact-hero-background.jpg') no-repeat center center/cover;
+}
+
+.hero-achievements {
+    background: url('achievements-hero-background.jpg') no-repeat center center/cover;
+}
+
+.hero-workshops {
+    background: url('workshops-hero-background.jpg') no-repeat center center/cover;
+}
+
+.hero-contact {
+    background: url('contact-hero-background.jpg') no-repeat center center/cover;
+}

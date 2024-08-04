@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrithik Nandi - Achievements</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="menu-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i><span> Home</span></a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i><span> Education</span></a></li>
+                <li><a href="projects.html"><i class="fas fa-book"></i><span> Publications</span></a></li>
+                <li><a href="workshops-and-conferences.html"><i class="fas fa-chalkboard-teacher"></i><span> Workshops and Conferences</span></a></li>
+                <li><a href="achievements.html"><i class="fas fa-trophy"></i><span> Achievements</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero hero-achievements">
+            <div class="hero-content">
+                <h1>Achievements</h1>
+            </div>
+        </section>
+
+        <section class="workshops">
+            <div class="section-content">
+                <div class="eventa">
+            	    <h3>&#9670 Qualified GATE in Mathematics (MA) (2022)</h3>
+        	</div>
+
+		<div class="eventa">
+		    <h3>&#9670 Qualified JAM in Mathematics (MA) (2020)</h3>
+		</div>
+
+		<div class="eventa">
+		    <h3>&#9670 DST INSPIRE (SHE) Scholar (2017-2022)</h3>
+		</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+	    <a href="mailto:hrithiknandi.crypto@gmail.com" target="_blank" rel="noopener noreferrer" class="gmail"><span class="iconify" data-icon="logos:google-gmail"></span></a>
+	    <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+	    <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('header').classList.toggle('expanded');
+            var menuButton = document.getElementById('menu-button');
+            menuButton.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrithik Nandi - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="menu-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i><span> Home</span></a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i><span> Education</span></a></li>
+                <li><a href="projects.html"><i class="fas fa-book"></i><span> Publications</span></a></li>
+                <li><a href="workshops-and-conferences.html"><i class="fas fa-chalkboard-teacher"></i><span> Workshops and Conferences</span></a></li>
+                <li><a href="achievements.html"><i class="fas fa-trophy"></i><span> Achievements</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero hero-home">
+            <div class="hero-content custom-position">
+                <p>"But I have promises to keep,</p>
+                <p>And miles to go before I sleep,</p>
+		<p>And miles to go before I sleep."</p>
+            </div>
+        </section>
+
+        <section class="introduction">
+            <div class="intro-content">
+                <img src="profile.jpg" alt="Hrithik Nandi" class="profile-pic">
+                <div class="intro-text">
+                    <h2>Welcome!</h2>
+                    <p>I'm Hrithik Nandi (ঋত্বিক নন্দী), a passionate cryptology researcher and senior research fellow in computer science specializing in cryptology. I am fortunate to work under the guidance of <a href="https://sites.google.com/view/avijit-dutta/home" target="_blank">Dr. Avijit Dutta</a> at <a href="https://www.tcgcrest.org/institutes/iai/" target="_blank">Institute for Advancing Intelligence TCG CREST</a>, where I delve into cutting-edge cryptographic techniques and their applications.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+	    <a href="mailto:hrithiknandi.crypto@gmail.com" target="_blank" rel="noopener noreferrer" class="gmail"><span class="iconify" data-icon="logos:google-gmail"></span></a>
+	    <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+	    <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('header').classList.toggle('expanded');
+            var menuButton = document.getElementById('menu-button');
+            menuButton.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

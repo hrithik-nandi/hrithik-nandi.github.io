@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrithik Nandi - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles to center the contact info and contact form */
+        .contact-info {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+	    display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-info div {
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+	    flex: 1 1 50%;
+            margin: 10px;
+        }
+
+        /* Add spacing between sections */
+        .contact-info {
+            margin-top: 40px; /* Adjust this value to create the desired space */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menu-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i><span> Home</span></a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i><span> Education</span></a></li>
+                <li><a href="projects.html"><i class="fas fa-book"></i><span> Publications</span></a></li>
+                <li><a href="workshops-and-conferences.html"><i class="fas fa-chalkboard-teacher"></i><span> Workshops and Conferences</span></a></li>
+                <li><a href="achievements.html"><i class="fas fa-trophy"></i><span> Achievements</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero hero-contact">
+            <div class="hero-content">
+                <h1>Contact me</h1>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div>
+                <h2>Institute Address</h2>
+                <p>First Floor, Tower 1, Bengal Eco Intelligent Park (Techna), Block EM, Plot No. 3, Sector V, Salt lake, Kolkata 700091, West Bengal, INDIA</p>
+            </div>
+            <div>
+                <h2>Email</h2>
+                <p><a href="mailto:hrithiknandi.crypto@gmail.com">hrithiknandi.crypto@gmail.com</a> or <a href="mailto:hrithik.nandi.85@tcgcrest.org">hrithik.nandi.85@tcgcrest.org</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="mailto:hrithiknandi.crypto@gmail.com" target="_blank" rel="noopener noreferrer" class="gmail"><span class="iconify" data-icon="logos:google-gmail" style="color: #D93025; font-size: 24px; height: 24px; width: 24px;"></span></a>
+            <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin" style="color: #0077B5; font-size: 24px;"></i></a>
+            <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid" style="color: #A6CE39; font-size: 24px;"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('header').classList.toggle('expanded');
+            var menuButton = document.getElementById('menu-button');
+            menuButton.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
