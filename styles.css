@@ -71,9 +71,10 @@ footer {
     height: 20px;
 }
 
-.social-links .scholar-icon {
-    width: 22px; /* Adjust the width as needed */
-    height: 22px; /* Adjust the height as needed */
+.social-links .scholar .iconify {
+    color: #4285F4; /* Google Scholar icon color */
+    width: 22px;
+    height: 20px;
 }
 
 .social-links a:hover {
