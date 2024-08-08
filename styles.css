@@ -71,11 +71,7 @@ footer {
     height: 20px;
 }
 
-.social-links .scholar-icon {
-    width: 26px; /* Adjust the width as needed */
-    height: 26px; /* Adjust the height as needed */
-    vertical-align: middle; /* Align the icon with the text */
-}
+
 
 .social-links a:hover {
     opacity: 0.7;
