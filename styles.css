@@ -65,7 +65,10 @@ footer {
     color: #ea4335; /* Gmail icon color */
 }
 
-
+.social-links .scholar-icon {
+    margin-bottom: 0.5rem; 
+    vertical-align: middle; /* Align the icon with the text */
+}
 
 .social-links a:hover {
     opacity: 0.7;
