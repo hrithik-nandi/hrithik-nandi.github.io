@@ -71,10 +71,10 @@ footer {
     height: 20px;
 }
 
-.social-links .scholar i {
-    color: #74C0FC; /* ORCID icon color */
-    width: 20px;
-    height: 20px;
+.social-links .scholar-icon {
+    width: 22px; /* Adjust the width as needed */
+    height: 22px; /* Adjust the height as needed */
+    vertical-align: middle; /* Align the icon with the text */
 }
 
 .social-links a:hover {
