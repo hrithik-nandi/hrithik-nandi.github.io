@@ -10,26 +10,32 @@
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
-        /* Additional styles to center the contact info and contact form */
         .contact-info {
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-	    display: flex;
+            display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
         }
+
         .contact-info div {
-            display: inline-block;
+            display: flex;
+            align-items: center;
             text-align: left;
-            width: 100%;
-	    flex: 1 1 50%;
+            flex: 1 1 50%;
             margin: 10px;
         }
 
-        /* Add spacing between sections */
+        .contact-info div i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        /* Adjust spacing between sections */
         .contact-info {
-            margin-top: 40px; /* Adjust this value to create the desired space */
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -57,21 +63,25 @@
 
         <section class="contact-info">
             <div>
-                <h2>Institute Address</h2>
-                <p>First Floor, Tower 1, Bengal Eco Intelligent Park (Techna), Block EM, Plot No. 3, Sector V, Salt lake, Kolkata 700091, West Bengal, INDIA</p>
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <p>First Floor, Tower 1, Bengal Eco Intelligent Park (Techna), Block EM, Plot No. 3, Sector V, Salt lake, Kolkata 700091, West Bengal, INDIA</p>
+                </div>
             </div>
             <div>
-                <h2>Email</h2>
-                <p><a href="mailto:hrithiknandi.crypto@gmail.com">hrithiknandi.crypto@gmail.com</a> or <a href="mailto:hrithik.nandi.85@tcgcrest.org">hrithik.nandi.85@tcgcrest.org</a></p>
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <p><a href="mailto:hrithiknandi.crypto@gmail.com">hrithiknandi.crypto@gmail.com</a> / <a href="mailto:hrithik.nandi.85@tcgcrest.org">hrithik.nandi.85@tcgcrest.org</a></p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="social-links">
-	    <a href="https://scholar.google.com/citations?user=wmhiPCgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="scholar"><img src="image.png" alt="Google Scholar" class="scholar-icon"></a>
-	    <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
-	    <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=wmhiPCgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="scholar"><img src="image.png" alt="Google Scholar" class="scholar-icon"></a>
+            <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
+            <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
