@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hrithik Nandi - Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header>
@@ -16,51 +20,82 @@
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i><span> Home</span></a></li>
-                <li><a href="education.html"><i class="fas fa-graduation-cap"></i><span> Education</span></a></li>
-                <li><a href="projects.html"><i class="fas fa-book"></i><span> Publications</span></a></li>
+                <li><a href="education.html"><i class="fas fa-book"></i><span> Education</span></a></li>
+                <li><a href="research.html"><i class="fas fa-graduation-cap"></i><span> Research</span></a></li>
                 <li><a href="workshops-and-conferences.html"><i class="fas fa-chalkboard-teacher"></i><span> Workshops and Conferences</span></a></li>
-                <li><a href="achievements.html"><i class="fas fa-trophy"></i><span> Achievements</span></a></li>
+                <li><a href="activity.html"><i class="fas fa-diagram-project"></i><span> Activities</span></a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero hero-education">
-            <div class="hero-content">
-                <h1>Education</h1>
-            </div>
-        </section>
+        
 
-        <section class="workshops">
-        <div class="section-content">
-            
-            <div class="evente">
-                <h3>Ph.D. - Computer Science</h3>
-                <p>2022 - Present</p>
-                <p><a href="https://www.tcgcrest.org/cryptology/" target="_blank">Cryptology and Security Group</a> at <a href="https://www.tcgcrest.org/institutes/iai/" target="_blank">IAI TCG CREST</a> and <a href="https://cs.rkmvu.ac.in/" target="_blank">Department of Computer Science</a> at <a href="https://rkmvu.ac.in/" target="_blank">RKMVERI Belur</a></p>
+        <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+             
+            <div class="flex flex-col items-center text-center justify-center">
+                    <h2 class="text-gray-900 text-3xl title-font font-medium">Education</h2>
+                    <div class="w-24 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
             </div>
-            
-            <div class="evente">
-                <h3>M.Sc. - Mathematics</h3>
-                <p>2020 - 2022</p>
-                <p><a href="https://maths.rkmvu.ac.in/" target="_blank">Department of Mathematics</a> at <a href="https://rkmvu.ac.in/" target="_blank">Ramakrishna Mission Vivekananda Educational and Research Institute Belur</a></p>
-            </div>
-            
-            <div class="evente">
-                <h3>B.Sc. - Mathematics</h3>
-                <p>2017 - 2020</p>
-                <p><a href="http://department.rkmvccrahara.org/Department/LoadDepatmentDetails?departmentid=12" target="_blank">Department of Mathematics</a> at <a href="https://www.rkmvccrahara.org/" target="_blank">Ramakrishna Mission Vivekananda Centenary College Rahara</a></p>
-            </div>
+
+	    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                    <div class="p-4 md:w-full flex">
+                        <div class="flex-grow lg:px-32 px-6">
+                            <p class="mt-4 leading-relaxed lg:text-lg md:text-base text-justify"> 
+                                I am currently pursuing a Ph.D. in <em>Computer Science</em>, focusing on advanced research in the field. Before embarking on my Ph.D. journey, I completed my M.Sc. and B.Sc. in <em>Mathematics</em>, laying a strong foundation in analytical and problem-solving skills. This interdisciplinary experience equips me with a unique perspective at the intersection of computer science and mathematics.
+                            </p>
+		
+	    <ol class="pl-16 list-none">
+                                <li class="text-lg mt-8">
+                                    <span class="text-gray-900"><strong>Ph.D. - Computer Science</strong></span><br>
+                                    <p>2022 - Present</p>
+                                    <span class="text-gray-900"><p><a href="https://www.tcgcrest.org/cryptology/" target="_blank">Cryptology and Security Group</a> at <a href="https://www.tcgcrest.org/institutes/iai/" target="_blank">IAI TCG CREST</a> and <a href="https://cs.rkmvu.ac.in/" target="_blank">Department of Computer Science</a> at <a href="https://rkmvu.ac.in/" target="_blank">RKMVERI Belur</a></p></span><br>
+                                </li>
+				<li class="text-lg mt-8">
+                                    <span class="text-gray-900"><strong>M.Sc. - Mathematics</strong></span><br>
+                                    <p>2020 - 2022</p>
+                                    <span class="text-gray-900"><p><a href="https://maths.rkmvu.ac.in/" target="_blank">Department of Mathematics</a> at <a href="https://rkmvu.ac.in/" target="_blank">Ramakrishna Mission Vivekananda Educational and Research Institute Belur</a></p></span><br>
+                                </li>
+				<li class="text-lg mt-8">
+                                    <span class="text-gray-900"><strong>B.Sc. - Mathematics</strong></span><br>
+                                    <p>2017 - 2020</p>
+                                    <span class="text-gray-900"><p><a href="http://department.rkmvccrahara.org/Department/LoadDepatmentDetails?departmentid=12" target="_blank">Department of Mathematics</a> at <a href="https://www.rkmvccrahara.org/" target="_blank">Ramakrishna Mission Vivekananda Centenary College Rahara</a></p></span><br>
+                                </li>
+                            </ol>
+			    <p class="mt-4 leading-relaxed lg:text-lg md:text-base text-justify"> 
+                                Throughout my academic and journey, I have successfully qualified for and received the following competitive and prestigious examinations and scholarships. 
+                            </p>
+			    <ul class="pl-16 list-disc">
+                		<li class="text-lg mt-8">
+                        		<strong>Qualified GATE - Mathematics (MA) 2022</strong>
+				</li>
+				<li class="text-lg mt-8">
+                        		<strong>Qualified JAM - Mathematics (MA) 2020</strong>
+				</li>
+				<li class="text-lg mt-8">
+                        		<strong>DST INSPIRE (SHE) Scholar (2017 - 2022)</strong>
+				</li>
+			    </ul>
+			</div>
+		    </div>
+	        </div>
         </div>
     </section>
     </main>
 
     <footer>
+	<div class="copyright">
+          <p>© <script>document.write(new Date().getFullYear())</script> Hrithik Nandi
+          </p>
+	</div>
         <div class="social-links">
 	    <a href="https://scholar.google.com/citations?user=wmhiPCgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="scholar"><img src="image.png" alt="Google Scholar" class="scholar-icon"></a>
 	    <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
+	    <a href="https://rkmvu.academia.edu/HrithikNandi" target="_blank" rel="noopener noreferrer" class="github"><i class="ai ai-academia"></i></a>
 	    <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+	    <a href="https://github.com/hrithik-nandi" target="_blank" rel="noopener noreferrer" class="github"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
 
