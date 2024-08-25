@@ -1,7 +1,12 @@
 /* Reset some default browser styles */
-body, h1, h2, p, ul {
+body, h2, p, ul {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    margin-top: 3rem;
+    font-size: 22pt;
 }
 
 /* Body styling */
@@ -10,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #D6DBDF;
+    background-color: #d6eaf8;
     color: #333;
 }
 
@@ -30,7 +35,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1a1a2e; /* Dark blue background */
+    background-color: #000; /* Dark blue background */
 }
 
 header.expanded {
@@ -39,22 +44,39 @@ header.expanded {
 
 /* Footer styling */
 footer {
-    background-color: #D6DBDF;
+    background-color: #d6eaf8;
     color: white;
     text-align: right;
     padding: 5px 5;
+    display: flex;          /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the elements */
+    align-items: center;    /* Center the items vertically */
+    padding: 10px 20px;     /* Adjust the padding for better spacing */
+}
+
+.copyright {
+    margin-left: 5rem;      /* Add some margin to separate from the left edge */
+    color: gray;
+}
+
+.social-links {
+    margin-right: 0.5rem;     /* Add some margin to separate from the right edge */
 }
 
 .social-links a {
     color: inherit;
-    margin: 0 20px;
+    margin: 0 10px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
     transition: color 0.3s;
 }
 
 .social-links .linkedin i {
     color: #0072b5; /* LinkedIn icon color */
+}
+
+.social-links .github i {
+    color: #000; /* github icon color */
 }
 
 .social-links .orcid i {
@@ -64,6 +86,14 @@ footer {
 .social-links .gmail .iconify {
     color: #ea4335; /* Gmail icon color */
 }
+
+.scholar-icon {
+    width: 26px !important;
+    height: 26px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
 
 .social-links .scholar-icon {
     margin-bottom: 0.5rem; 
@@ -240,7 +270,7 @@ header.expanded ~ .hero {
 .hero-content.custom-position {
     position: absolute;
     top: 35%;
-    left: 70%;
+    left: 65%;
     transform: translate(-10%, -20%);
 }
 
@@ -263,9 +293,9 @@ header.expanded ~ .hero {
 .profile-pic {
     border-radius: 50%;
     margin-right: 2rem; /* Adjusted margin for better spacing */
-    width: 200px; /* Increased width */
-    height: 200px; /* Increased height */
-    object-fit: contain; /* Ensure the image covers the container without distortion */
+    width: 150px; /* Increased width */
+    height: 150px; /* Increased height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
     flex-shrink: 0;
     max-width: 100%;
 }
@@ -297,7 +327,7 @@ header.expanded ~ .hero {
     header {
         width: 100%; /* Make header full width on small screens */
         height: auto;
-        position: static;
+        position: relative;
     }
     nav ul {
         display: flex;
@@ -312,6 +342,9 @@ header.expanded ~ .hero {
     .hero {
         margin-left: 0;
     }
+    .hero-content {
+    	font-size: 14pt
+    }
     .intro-content {
         flex-direction: column; /* Stack image and text vertically */
         align-items: center; /* Center items */
@@ -319,8 +352,8 @@ header.expanded ~ .hero {
     .profile-pic {
         margin-right: 0;
         margin-bottom: 1rem;
-        width: 150px; /* Adjusted width for smaller screens */
-        height: 150px; /* Adjusted height for smaller screens */
+        width: 100px; /* Adjusted width for smaller screens */
+        height: 100px; /* Adjusted height for smaller screens */
     }
     .intro-text {
         text-align: center;
@@ -360,8 +393,6 @@ header.expanded ~ .hero {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #ddd; /* Light border around each event */
-    border-radius: 8px; /* Rounded corners */
     text-align: left;
 }
 
@@ -510,7 +541,7 @@ a {
 
 /* Hover effect for links */
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Shaded box for the entire content */
@@ -536,9 +567,7 @@ a:hover {
     font-size: 1rem;
 }
 
-.hero-education {
-    background: url('education-hero-background.jpg') no-repeat center center/cover;
-}
+
 
 .hero-projects {
     background: url('projects-hero-background.jpg') no-repeat center center/cover;
