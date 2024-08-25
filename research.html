@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrithik Nandi - Research</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div id="menu-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i><span> Home</span></a></li>
+                <li><a href="education.html"><i class="fas fa-book"></i><span> Education</span></a></li>
+                <li><a href="research.html"><i class="fas fa-graduation-cap"></i><span> Research</span></a></li>
+                <li><a href="workshops-and-conferences.html"><i class="fas fa-chalkboard-teacher"></i><span> Workshops and Conferences</span></a></li>
+                <li><a href="activity.html"><i class="fas fa-diagram-project"></i><span> Activities</span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
+        <!-- Research Section -->
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col items-center text-center justify-center">
+                    <h2 class="text-gray-900 text-3xl title-font font-medium">Research</h2>
+                    <div class="w-24 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                </div>
+                <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                    <div class="p-4 md:w-full flex">
+                        <div class="flex-grow lg:px-32 px-6">
+                            <p class="mt-4 leading-relaxed lg:text-lg md:text-base text-justify"> 
+                                I am working in the area of symmetric key cryptography with a special focus on <em>provable security</em>. My research interest primarily includes the <em>design and analysis</em> of symmetric-key cryptographic schemes, <em>security analysis</em> of symmetric modes, authenticated encryption, <em>cryptanalysis</em> of primitives etc.
+                            </p>
+                            <h2 class="mt-4 mb-4 text-gray-900 text-xl title-font font-medium" id="publications">Publications and Preprints</h2>
+                            <ol class="pl-10 list-decimal">
+                                <li class="text-lg mt-4">
+                                    <span class="text-gray-900">Efficient Variants of TNT with BBB Security</span><br>
+				    <p>R. Bhaumik, W. Choi, A. Dutta, C. M. López, <strong>H. Nandi</strong>, Y. Shen</p>
+				    ProvSec 2024<br>
+                                    <div class="flex space-x-4 items-center my-2">
+                                        <div class="border rounded-lg border-gray-600 p-1">
+                                            <button class="abstract-button rounded text-blue-500 hover:text-blue-800">Abstract</button>
+                                        </div>
+                                        <div class="abstract-overlay hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+                                            <div class="abstract-content p-4 bg-white rounded w-1/2">
+                                                <p class="leading-relaxed lg:text-lg md:text-base text-justify">
+                            At EUROCRYPT'20, Bao et al. have shown that three-round cascading of \(\textsf{LRW1}\) construction, which they dubbed as \(\textsf{TNT}\), is a strong tweakable pseudorandom permutation that provably achieves \(2n/3\)-bit security bound. Jha et al. showed a birthday bound distinguishing attack on \(\textsf{TNT}\) and invalidated the proven security bound and proved a tight birthday bound security on the \(\textsf{TNT}\) construction in EUROCRYPT'24.
+						</p>
+						<p class="leading-relaxed lg:text-lg md:text-base text-justify">
+                            In a recent work, Datta et al. have shown that four round cascading of the \(\textsf{LRW1}\) construction, which they dubbed as \(\textsf{CLRW1}^4\), is a strong tweakable pseudorandom permutation that provably achieves \(3n/4\)-bit security. In this paper, we propose a variant of the \(\textsf{TNT}\) construction, called \(\textsf{b-TNT1}\), and proved its security up to \(2^{3n/4}\) queries. However, unlike \(\textsf{CLRW1}^4\), \(\textsf{b-TNT1}\) requires three block cipher calls along with a field multiplication. Besides, we also propose another variant of the \(\textsf{TNT}\) construction, called \(\textsf{b-TNT2}\), and showed a similar security bound. Compared to \(\textsf{b-TNT1}\), \(\textsf{b-TNT2}\) requires four block cipher calls. Nevertheless, its execution of block cipher calls can be pipelined which makes it efficient over \(\textsf{CLRW1}^4\). We have also experimentally verified that both \(\textsf{b-TNT1}\) and \(\textsf{b-TNT2}\) outperform \(\textsf{CLRW1}^4\).
+                        			</p>
+                                                <button class="close-button bg-red-500 text-white py-2 px-4 mt-4 rounded">Close</button>
+                                            </div>
+                                        </div>
+					<div class="border rounded-lg border-gray-600 p-1">
+						<a href="https://eprint.iacr.org/2024/1237" target="_blank" class="text-blue-500 hover:text-blue-800">ePrint</a>
+					</div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+	<div class="copyright">
+          <p>© <script>document.write(new Date().getFullYear())</script> Hrithik Nandi
+          </p>
+	</div>
+        <div class="social-links">
+	    <a href="https://scholar.google.com/citations?user=wmhiPCgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="scholar"><img src="image.png" alt="Google Scholar" class="scholar-icon"></a>
+	    <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
+	    <a href="https://rkmvu.academia.edu/HrithikNandi" target="_blank" rel="noopener noreferrer" class="github"><i class="ai ai-academia"></i></a>
+	    <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+	    <a href="https://github.com/hrithik-nandi" target="_blank" rel="noopener noreferrer" class="github"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for menu toggle and abstract button -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('header').classList.toggle('expanded');
+            var menuButton = document.getElementById('menu-button');
+            menuButton.classList.toggle('open');
+        }
+
+        // Toggle the abstract overlay
+        document.querySelectorAll('.abstract-button').forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Find the nearest overlay and toggle its visibility
+                var overlay = this.parentElement.nextElementSibling;
+                overlay.classList.toggle('hidden');
+            });
+        });
+
+        // Close the abstract overlay
+        document.querySelectorAll('.close-button').forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Find the overlay to hide
+                var overlay = this.closest('.abstract-overlay');
+                overlay.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
