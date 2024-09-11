@@ -17,17 +17,20 @@
 <body>
     <!-- Header Section -->
     <header>
-        <div id="menu-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i><span> Home</span></a></li>
-                <li><a href="education.html"><i class="fas fa-book"></i><span> Education</span></a></li>
-                <li><a href="research.html"><i class="fas fa-graduation-cap"></i><span> Research</span></a></li>
-                <li><a href="workshops-and-conferences.html"><i class="fas fa-chalkboard-teacher"></i><span> Workshops and Conferences</span></a></li>
-                <li><a href="activity.html"><i class="fas fa-diagram-project"></i><span> Activities</span></a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
-            </ul>
-        </nav>
+        <div class="top-nav">
+            <div class="name">Hrithik Nandi</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="workshops-and-conferences.html">Conferences</a></li>
+                    <li><a href="activity.html">Activities</a></li>
+		    <li><a href="photos.html">Memories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Section -->
@@ -50,6 +53,16 @@
                 <div class="flex flex-wrap sm:pl-10 -m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
                     <div class="p-4 md:w-full flex">
                         <div class="flex-grow lg:px-32 px-6">
+			    <h2 class="mt-4 mb-4 text-gray-900 text-xl title-font font-medium" id="publications">Teaching Assistant</h2>
+                            <ol class="pl-10 list-decimal">
+                                <li class="text-lg mt-4">
+					Cryptology, IAI TCG CREST, Aug-Dec, 2023
+				</li>
+				<li class="text-lg mt-4">
+					Discrete Mathematics, IAI TCG CREST, Aug-Dec, 2024
+				</li>
+                            </ol>
+
                             <h2 class="mt-4 mb-4 text-gray-900 text-xl title-font font-medium" id="publications">Selected Talks</h2>
                             <ul class="pl-10" style="list-style-type:disc;">
                                 <li class="text-lg mt-4">
@@ -62,17 +75,17 @@
 						<a href="2nd_Year_Evaluation_Presentation.pdf" target="_blank" class="text-green-500 hover:text-green-800"><i class="fa-regular fa-file-pdf pl-4 pr-1"></i>Slide</a>
 					</div>
 				</li>
-                            </ul>
-
-			    <h2 class="mt-4 mb-4 text-gray-900 text-xl title-font font-medium" id="publications">Teaching Assistant</h2>
-                            <ol class="pl-10 list-decimal">
-                                <li class="text-lg mt-4">
-					Cryptology, IAI TCG CREST, Aug-Dec, 2023
-				</li>
 				<li class="text-lg mt-4">
-					Discrete Mathematics, IAI TCG CREST, Aug-Dec, 2024
+					<span class="text-gray-700 italic">Master's Thesis Presentation</span><br>
+					<div class="text-gray-500 text-sm mt-1">
+						<i class="fa-solid fa-calendar-check pl-4 text-red-500"></i>
+						July 11, 2022
+						<i class="fas fa-map-marker-alt pl-4 text-blue-600"></i>
+						RKMVERI, Belur
+						<a href="Master's_Thesis_PPT.pdf" target="_blank" class="text-green-500 hover:text-green-800"><i class="fa-regular fa-file-pdf pl-4 pr-1"></i>Slide</a>
+					</div>
 				</li>
-                            </ol>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -82,16 +95,16 @@
 
     <!-- Footer Section -->
     <footer>
-	<div class="copyright">
-          <p>© <script>document.write(new Date().getFullYear())</script> Hrithik Nandi
-          </p>
-	</div>
+        <div class="copyright">
+            <p>© <script>document.write(new Date().getFullYear())</script> Hrithik Nandi</p>
+        </div>
         <div class="social-links">
-	    <a href="https://scholar.google.com/citations?user=wmhiPCgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="scholar"><img src="image.png" alt="Google Scholar" class="scholar-icon"></a>
-	    <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
-	    <a href="https://rkmvu.academia.edu/HrithikNandi" target="_blank" rel="noopener noreferrer" class="github"><i class="ai ai-academia"></i></a>
-	    <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
-	    <a href="https://github.com/hrithik-nandi" target="_blank" rel="noopener noreferrer" class="github"><i class="fa-brands fa-github"></i></a>
+	    <a href="https://dblp.org/pid/384/3420.html" target="_blank" rel="noopener noreferrer" class="scholar"><img src="dblp.png" alt="DBLP" class="scholar-icon"></a>
+            <a href="https://scholar.google.com/citations?user=wmhiPCgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="scholar"><img src="image.png" alt="Google Scholar" class="scholar-icon"></a>
+            <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
+            <a href="https://rkmvu.academia.edu/HrithikNandi" target="_blank" rel="noopener noreferrer" class="github"><i class="ai ai-academia"></i></a>
+            <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/hrithik-nandi" target="_blank" rel="noopener noreferrer" class="github"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
 
@@ -102,24 +115,6 @@
             var menuButton = document.getElementById('menu-button');
             menuButton.classList.toggle('open');
         }
-
-        // Toggle the abstract overlay
-        document.querySelectorAll('.abstract-button').forEach(function(button) {
-            button.addEventListener('click', function() {
-                // Find the nearest overlay and toggle its visibility
-                var overlay = this.parentElement.nextElementSibling;
-                overlay.classList.toggle('hidden');
-            });
-        });
-
-        // Close the abstract overlay
-        document.querySelectorAll('.close-button').forEach(function(button) {
-            button.addEventListener('click', function() {
-                // Find the overlay to hide
-                var overlay = this.closest('.abstract-overlay');
-                overlay.classList.add('hidden');
-            });
-        });
     </script>
 </body>
 </html>
