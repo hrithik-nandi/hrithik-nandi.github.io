@@ -87,11 +87,13 @@ nav ul li a:hover {
     /* Show navigation when menu is toggled */
     nav ul.show {
         display: flex;
+	left: 0; /* Left-align the navigation list */
+        text-align: left; /* Ensure text in navigation is left-aligned */
     }
 
     nav ul li {
         margin: 10px 0;
-        text-align: center;
+        text-align: left;
     }
 
     /* Hamburger menu button styling */
@@ -100,6 +102,9 @@ nav ul li a:hover {
         cursor: pointer;
         color: #fff;
         font-size: 1.5rem;
+	position: absolute;
+        left: 10px; /* Left-align the menu button */
+        top: 10px;  /* Keep it at the top */
     }
 }
 
