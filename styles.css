@@ -71,6 +71,49 @@ nav ul li a:hover {
     color: #f39c12; /* Highlight color on hover */
 }
 
+/* Hide the menu for mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the navigation on mobile */
+        flex-direction: column;
+        background-color: #7f8c8d;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    /* Show navigation when menu is toggled */
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Hamburger menu button styling */
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+}
+
+/* Hide the hamburger menu for larger screens */
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+}
+
 /* Footer styling */
 footer {
     background-color: #f4f4f9;
