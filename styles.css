@@ -94,6 +94,7 @@ nav ul li a:hover {
     nav ul li {
         margin: 10px 0;
         text-align: left;
+	margin-lrft: 10px;
     }
 
     /* Hamburger menu button styling */
