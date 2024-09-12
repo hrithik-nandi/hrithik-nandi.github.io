@@ -114,6 +114,11 @@ nav ul li a:hover {
     display: none;
 }
 
+/* Add styling for the cross icon */
+.menu-btn.cross i {
+    content: '\f00d'; /* FontAwesome cross icon */
+}
+
 @media (max-width: 768px) {
     .menu-btn {
         display: block;
