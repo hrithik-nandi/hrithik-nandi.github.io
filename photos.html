@@ -49,21 +49,24 @@
 <body>
     <!-- Header Section -->
     <header>
-        <div class="top-nav">
-            <div class="name">Hrithik Nandi</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="workshops-and-conferences.html">Conferences</a></li>
-                    <li><a href="activity.html">Activities</a></li>
-		    <li><a href="photos.html">Memories</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="top-nav">
+        <div class="name">Hrithik Nandi</div>
+        <div class="menu-btn" id="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-caret-down"></i> <!-- Initially showing hamburger icon -->
         </div>
-    </header>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="workshops-and-conferences.html">Conferences</a></li>
+                <li><a href="activity.html">Activities</a></li>
+		<li><a href="photos.html">Memories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <main>
     <section class="text-gray-600 body-font">
@@ -169,7 +172,7 @@
                 </figure>
                 <figure>
                     <a>
-                        <img src="rkmveri/2.JPG" alt="RKMVERI">
+                        <img src="rkmveri/2.jpg" alt="RKMVERI">
                     </a>
                     <figcaption></figcaption>
                 </figure>
@@ -181,19 +184,19 @@
                 </figure>
 		<figure>
                     <a>
-                        <img src="rkmveri/4.JPG" alt="RKMVERI">
+                        <img src="rkmveri/4.jpg" alt="RKMVERI">
                     </a>
                     <figcaption>With Stephan Sir</figcaption>
                 </figure>
 		<figure>
                     <a>
-                        <img src="rkmveri/5.JPG" alt="RKMVERI">
+                        <img src="rkmveri/5.jpg" alt="RKMVERI">
                     </a>
                     <figcaption>With Debadri</figcaption>
                 </figure>
 		<figure>
                     <a>
-                        <img src="rkmveri/6.JPG" alt="RKMVERI">
+                        <img src="rkmveri/6.jpg" alt="RKMVERI">
                     </a>
                     <figcaption>With Krishnakanta</figcaption>
                 </figure>
@@ -262,10 +265,21 @@
     <!-- JavaScript for menu toggle and abstract button -->
     <script>
         function toggleMenu() {
-            document.querySelector('header').classList.toggle('expanded');
-            var menuButton = document.getElementById('menu-button');
-            menuButton.classList.toggle('open');
-        }
-    </script>
+    var menu = document.getElementById("nav-menu");
+    var menuIcon = document.getElementById("menu-icon");
+    
+    // Toggle menu visibility
+    menu.classList.toggle("show");
+    
+    // Toggle between hamburger and cross icon
+    if (menuIcon.classList.contains("cross")) {
+        menuIcon.innerHTML = '<i class="fa-solid fa-caret-down"></i>'; // Hamburger icon
+        menuIcon.classList.remove("cross");
+    } else {
+        menuIcon.innerHTML = '<i class="fa-solid fa-caret-up"></i>'; // Cross icon
+        menuIcon.classList.add("cross");
+    }
+}
+</script>
 </body>
 </html>
