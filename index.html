@@ -17,7 +17,7 @@
     <div class="top-nav">
         <div class="name">Hrithik Nandi</div>
         <div class="menu-btn" id="menu-icon" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i> <!-- Initially showing hamburger icon -->
+            <i class="fa-solid fa-caret-down"></i> <!-- Initially showing hamburger icon -->
         </div>
         <nav>
             <ul id="nav-menu">
@@ -77,10 +77,10 @@
     
     // Toggle between hamburger and cross icon
     if (menuIcon.classList.contains("cross")) {
-        menuIcon.innerHTML = '<i class="fas fa-bars"></i>'; // Hamburger icon
+        menuIcon.innerHTML = '<i class="fa-solid fa-caret-down"></i>'; // Hamburger icon
         menuIcon.classList.remove("cross");
     } else {
-        menuIcon.innerHTML = '<i class="fas fa-times"></i>'; // Cross icon
+        menuIcon.innerHTML = '<i class="fa-solid fa-caret-up"></i>'; // Cross icon
         menuIcon.classList.add("cross");
     }
 }
