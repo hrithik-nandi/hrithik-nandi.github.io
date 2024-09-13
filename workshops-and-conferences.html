@@ -16,21 +16,24 @@
 </head>
 <body>
     <header>
-        <div class="top-nav">
-            <div class="name">Hrithik Nandi</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="workshops-and-conferences.html">Conferences</a></li>
-                    <li><a href="activity.html">Activities</a></li>
-		    <li><a href="photos.html">Memories</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="top-nav">
+        <div class="name">Hrithik Nandi</div>
+        <div class="menu-btn" id="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-caret-down"></i> <!-- Initially showing hamburger icon -->
         </div>
-    </header>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="workshops-and-conferences.html">Conferences</a></li>
+                <li><a href="activity.html">Activities</a></li>
+		<li><a href="photos.html">Memories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <main>
         
@@ -102,10 +105,21 @@
 
     <script>
         function toggleMenu() {
-            document.querySelector('header').classList.toggle('expanded');
-            var menuButton = document.getElementById('menu-button');
-            menuButton.classList.toggle('open');
-        }
-    </script>
+    var menu = document.getElementById("nav-menu");
+    var menuIcon = document.getElementById("menu-icon");
+    
+    // Toggle menu visibility
+    menu.classList.toggle("show");
+    
+    // Toggle between hamburger and cross icon
+    if (menuIcon.classList.contains("cross")) {
+        menuIcon.innerHTML = '<i class="fa-solid fa-caret-down"></i>'; // Hamburger icon
+        menuIcon.classList.remove("cross");
+    } else {
+        menuIcon.innerHTML = '<i class="fa-solid fa-caret-up"></i>'; // Cross icon
+        menuIcon.classList.add("cross");
+    }
+}
+</script>
 </body>
 </html>
