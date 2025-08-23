@@ -26,7 +26,7 @@ main {
 
 /* Header styling */
 header {
-    background-color: #7f8c8d;
+    background-color: #87CEEB;
     color: #fff;
     position: fixed;
     width: 100%;
@@ -76,7 +76,7 @@ nav ul li a:hover {
     nav ul {
         display: none; /* Hide the navigation on mobile */
         flex-direction: column;
-        background-color: #9fc5e8;
+        background-color: #87CEEB;
         position: absolute;
         top: 60px;
         left: 0;
