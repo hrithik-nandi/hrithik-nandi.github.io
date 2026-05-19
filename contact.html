@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
@@ -22,35 +21,10 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <style>
-        .cursor-not-allowed {
-            cursor: not-allowed;
-        }
-
-        /* Enhanced Contact Section Styling */
-        .contact-hero {
-            padding: 2rem 0;
-            text-align: center;
-            background: linear-gradient(135deg, #f0f9ff 0%, #f0fdfa 100%);
-        }
-
-        .contact-hero h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.25rem;
-            font-weight: 700;
-            color: #1e3a5f;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.5px;
-        }
-
-        .contact-hero .divider {
-            width: 6rem;
-            height: 0.25rem;
-            background: linear-gradient(90deg, #06b6d4 0%, #0891b2 100%);
-            margin: 1rem auto;
-            border-radius: 0.125rem;
-        }
-
-        /* Contact Info Cards */
+            .cursor-not-allowed {
+                cursor: not-allowed;
+            }
+            /* Contact Info Cards */
         .contact-info-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -104,233 +78,43 @@
         .contact-info-card a:hover {
             color: #0891b2;
         }
-
-        /* Contact Form Section */
-        .contact-form-section {
-            background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
-            border: 1px solid #e2e8f0;
-            border-radius: 0.65rem;
-            padding: 3rem;
-            margin-top: 3rem;
-        }
-
-        .contact-form-section h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1e3a5f;
-            margin-bottom: 2rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: #1e3a5f;
-            margin-bottom: 0.5rem;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.5rem;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            color: #1e3a5f;
-            background-color: #ffffff;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #06b6d4;
-            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
-            background-color: #f0fdfa;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
-
-        @media (max-width: 640px) {
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-form-section {
-                padding: 1.5rem;
-            }
-
-            .contact-hero h2 {
-                font-size: 1.875rem;
-            }
-
-            .contact-info-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
-            color: #ffffff;
-            border: none;
-            border-radius: 0.5rem;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 1rem;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
-        }
-
-        .submit-btn:active {
-            transform: translateY(0);
-        }
-
-        /* Success/Error Messages */
-        .success-message {
-            display: none;
-            padding: 1rem;
-            background-color: #d1fae5;
-            border: 1px solid #6ee7b7;
-            border-radius: 0.5rem;
-            color: #065f46;
-            margin-bottom: 1.5rem;
-            animation: slideDown 0.3s ease;
-        }
-
-        .error-message {
-            display: none;
-            padding: 1rem;
-            background-color: #fee2e2;
-            border: 1px solid #fca5a5;
-            border-radius: 0.5rem;
-            color: #7f1d1d;
-            margin-bottom: 1.5rem;
-            animation: slideDown 0.3s ease;
-        }
-
-        .success-message.show,
-        .error-message.show {
-            display: block;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Social Links Enhancement */
-        .social-links-section {
-            text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .social-links-section p {
-            color: #64748b;
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .social-links a {
-            width: 2.5rem;
-            height: 2.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f0f9ff;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.5rem;
-            color: #06b6d4;
-            text-decoration: none;
-            font-size: 1.25rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background-color: #06b6d4;
-            color: #ffffff;
-            transform: translateY(-2px);
-            border-color: #06b6d4;
-        }
-
-        .social-links .scholar-icon {
-            width: 1.25rem;
-            height: 1.25rem;
-            object-fit: contain;
-        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="top-nav">
-            <div class="name">Hrithik Nandi</div>
-            <div class="menu-btn" id="menu-icon" onclick="toggleMenu()">
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="workshops-and-conferences.html">Conferences</a></li>
-                    <li><a href="activity.html">Activities</a></li>
-                    <li><a href="photos.html">Memories</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="top-nav">
+        <div class="name">Hrithik Nandi</div>
+        <div class="menu-btn" id="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-caret-down"></i> <!-- Initially showing hamburger icon -->
         </div>
-    </header>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="workshops-and-conferences.html">Conferences</a></li>
+                <li><a href="activity.html">Activities</a></li>
+		        <li><a href="photos.html">Memories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- Main Section -->
     <main>
-        <!-- Hero Section -->
-        <section class="contact-hero">
-            <div class="container px-5 mx-auto">
-                <h2>Contact Me</h2>
-                <div class="divider"></div>
-                <p class="text-gray-600 text-lg">I'm always interested in collaborating on research projects or discussing new ideas.</p>
-            </div>
-        </section>
 
-        <!-- Contact Information Section -->
+	<section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col items-center text-center justify-center">
+                    <h2 class="text-gray-900 text-3xl title-font font-medium">Contact me</h2>
+                    <div class="w-24 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                    <p class="text-gray-600 text-lg">I'm always interested in collaborating on research projects or discussing new ideas.</p>
+                </div>
+	    </div>
+	</section>
+    <!-- Contact Information Section -->
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto">
                 <div class="contact-info-container">
@@ -353,73 +137,6 @@
                             <a href="mailto:hrithik.nandi.85@tcgcrest.org">hrithik.nandi.85@tcgcrest.org</a>
                         </div>
                     </div>
-
-                    <!-- Response Time Card -->
-                    <div class="contact-info-card">
-                        <i class="fas fa-clock"></i>
-                        <span class="label">Response Time</span>
-                        <div class="content">
-                            I typically respond to emails within 24-48 hours during business days.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="contact-form-section">
-                    <h3>Send Me a Message</h3>
-                    
-                    <div id="successMessage" class="success-message">
-                        ✓ Thank you! Your message has been sent successfully. I'll get back to you soon.
-                    </div>
-                    
-                    <div id="errorMessage" class="error-message">
-                        ✗ Please fill in all required fields correctly.
-                    </div>
-
-                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="Your name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required placeholder="your@email.com">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <input type="text" id="subject" name="subject" required placeholder="What is this about?">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone (Optional)</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" required placeholder="Tell me more about your inquiry..."></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-
-                <!-- Social Links Section -->
-                <div class="social-links-section">
-                    <p>Connect with me on social media</p>
-                    <div class="social-links">
-                        <a href="https://dblp.org/pid/384/3420.html" target="_blank" rel="noopener noreferrer" title="DBLP"><img src="dblp.png" alt="DBLP" class="scholar-icon"></a>
-                        <a href="https://scholar.google.com/citations?user=wmhiPCgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" title="Google Scholar"><img src="image.png" alt="Google Scholar" class="scholar-icon"></a>
-                        <a href="https://www.researchgate.net/profile/Hrithik-Nandi" target="_blank" rel="noopener noreferrer" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
-                        <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" title="ORCID"><i class="fab fa-orcid"></i></a>
-                        <a href="https://rkmvu.academia.edu/HrithikNandi" target="_blank" rel="noopener noreferrer" title="Academia.edu"><i class="ai ai-academia"></i></a>
-                        <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/hrithik-nandi" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -431,9 +148,9 @@
             <p>© <script>document.write(new Date().getFullYear())</script> Hrithik Nandi</p>
         </div>
         <div class="social-links">
-            <a href="https://dblp.org/pid/384/3420.html" target="_blank" rel="noopener noreferrer" class="scholar"><img src="dblp.png" alt="DBLP" class="scholar-icon"></a>
+	    <a href="https://dblp.org/pid/384/3420.html" target="_blank" rel="noopener noreferrer" class="scholar"><img src="dblp.png" alt="DBLP" class="scholar-icon"></a>
             <a href="https://scholar.google.com/citations?user=wmhiPCgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="scholar"><img src="image.png" alt="Google Scholar" class="scholar-icon"></a>
-            <a href="https://www.researchgate.net/profile/Hrithik-Nandi" target="_blank" rel="noopener noreferrer" class="github"><i class="fa-brands fa-researchgate" style="color: #00d0bb;"></i></a>
+	    <a href="https://www.researchgate.net/profile/Hrithik-Nandi" target="_blank" rel="noopener noreferrer" class="github"><i class="fa-brands fa-researchgate" style="color: #00d0bb;"></i></a>
             <a href="https://orcid.org/0009-0003-8395-4925" target="_blank" rel="noopener noreferrer" class="orcid"><i class="fab fa-orcid"></i></a>
             <a href="https://rkmvu.academia.edu/HrithikNandi" target="_blank" rel="noopener noreferrer" class="github"><i class="ai ai-academia"></i></a>
             <a href="https://www.linkedin.com/in/hrithik-nandi/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
@@ -441,73 +158,25 @@
         </div>
     </footer>
 
-    <!-- JavaScript for menu toggle and form handling -->
+    <!-- JavaScript for menu toggle and abstract button -->
     <script>
         function toggleMenu() {
-            var menu = document.getElementById("nav-menu");
-            var menuIcon = document.getElementById("menu-icon");
-            
-            menu.classList.toggle("show");
-            
-            if (menuIcon.classList.contains("cross")) {
-                menuIcon.innerHTML = '<i class="fa-solid fa-caret-down"></i>';
-                menuIcon.classList.remove("cross");
-            } else {
-                menuIcon.innerHTML = '<i class="fa-solid fa-caret-up"></i>';
-                menuIcon.classList.add("cross");
-            }
-        }
-
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            
-            const form = document.getElementById('contactForm');
-            const successMessage = document.getElementById('successMessage');
-            const errorMessage = document.getElementById('errorMessage');
-            
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData);
-            
-            // Validate form
-            if (!data.name || !data.email || !data.subject || !data.message) {
-                errorMessage.textContent = '✗ Please fill in all required fields.';
-                errorMessage.classList.add('show');
-                successMessage.classList.remove('show');
-                return;
-            }
-            
-            // Validate email format
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(data.email)) {
-                errorMessage.textContent = '✗ Please enter a valid email address.';
-                errorMessage.classList.add('show');
-                successMessage.classList.remove('show');
-                return;
-            }
-            
-            console.log('Form data:', data);
-            
-            successMessage.classList.add('show');
-            errorMessage.classList.remove('show');
-            
-            form.reset();
-            
-            setTimeout(() => {
-                successMessage.classList.remove('show');
-            }, 5000);
-        }
-
-        // Optional: Add form field validation on blur
-        document.querySelectorAll('input, textarea').forEach(field => {
-            field.addEventListener('blur', function() {
-                if (this.hasAttribute('required') && !this.value.trim()) {
-                    this.style.borderColor = '#fca5a5';
-                } else {
-                    this.style.borderColor = '#e2e8f0';
-                }
-            });
-        });
-    </script>
+    var menu = document.getElementById("nav-menu");
+    var menuIcon = document.getElementById("menu-icon");
+    
+    // Toggle menu visibility
+    menu.classList.toggle("show");
+    
+    // Toggle between hamburger and cross icon
+    if (menuIcon.classList.contains("cross")) {
+        menuIcon.innerHTML = '<i class="fa-solid fa-caret-down"></i>'; // Hamburger icon
+        menuIcon.classList.remove("cross");
+    } else {
+        menuIcon.innerHTML = '<i class="fa-solid fa-caret-up"></i>'; // Cross icon
+        menuIcon.classList.add("cross");
+    }
+}
+</script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 </html>
