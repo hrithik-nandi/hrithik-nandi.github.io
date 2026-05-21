@@ -48,7 +48,7 @@
 
     .contact-info-header i {
         font-size: 1.5rem;
-        color: #06b6d4;
+        color: red;
         flex-shrink: 0;
     }
 
@@ -60,9 +60,30 @@
         margin: 0;
     }
 
+	.contact-info1-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info1-header i {
+        font-size: 1.5rem;
+        color: blue;
+        flex-shrink: 0;
+    }
+
+    .contact-info1-header .label {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1e3a5f;
+        margin: 0;
+    }
+
     .contact-info-card .content {
         font-size: 0.9rem;
-        color: #64748b;
+        color: black;
         line-height: 1.6;
         margin-left: 2.25rem;
     }
@@ -97,6 +118,18 @@
         }
 
         .contact-info-header .label {
+            font-size: 0.95rem;
+        }
+
+		.contact-info1-header {
+            gap: 0.5rem;
+        }
+
+        .contact-info1-header i {
+            font-size: 1.25rem;
+        }
+
+        .contact-info1-header .label {
             font-size: 0.95rem;
         }
 
@@ -155,7 +188,7 @@
 
             <!-- Email Card -->
             <div class="contact-info-card">
-                <div class="contact-info-header">
+                <div class="contact-info1-header">
                     <i class="fas fa-envelope"></i>
                     <span class="label">Email</span>
                 </div>
