@@ -532,7 +532,7 @@ a:hover {
 }
 
 .research-publications .publication-year-group {
-    padding: 0.15rem 0 0.75rem;
+    padding: 0.15rem 0 0.5rem;
     border-top: 1px solid #d8dee8;
 }
 
@@ -541,7 +541,7 @@ a:hover {
 }
 
 .research-publications .publication-year-label {
-    margin: 0 0 -0.25rem;
+    margin: 0 0 -0.45rem;
     color: #a4adba;
     font-size: clamp(1.6rem, 3vw, 2.3rem);
     font-weight: 300;
@@ -721,7 +721,7 @@ a:hover {
     }
 
     .research-publications .publication-year-label {
-        margin-bottom: 1.25rem;
+        margin-bottom: 1.4rem;
         font-size: 1.9rem;
     }
 
