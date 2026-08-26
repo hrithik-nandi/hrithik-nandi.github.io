@@ -717,11 +717,11 @@ a:hover {
 
 @media (max-width: 680px) {
     .research-publications .publication-year-group {
-        padding-bottom: 1.5rem;
+        padding-bottom: 1.35rem;
     }
 
     .research-publications .publication-year-label {
-        margin-bottom: 1.4rem;
+        margin-bottom: 1rem;
         font-size: 1.9rem;
     }
 
