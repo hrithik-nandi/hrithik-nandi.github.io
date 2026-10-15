@@ -637,7 +637,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 0.25rem;
+    margin-top: 0.15rem;
 }
 
 .research-publications .publication-link-button {
